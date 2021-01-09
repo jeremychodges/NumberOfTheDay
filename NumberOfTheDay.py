@@ -9,7 +9,7 @@ import subprocess
 global maxNum
 global minNum
 
-subprocess.Popen(["say", "-v", "Fred", "Pick", "a", "number..."])  
+subprocess.Popen(["say", "-v", "Fred", "Pick", "a", "number..."]) 
 dailyNum = int(raw_input("What is the number of the day: "))
 iterations = int(raw_input("How many examples would you like: "))
 
@@ -70,7 +70,7 @@ def generateSubtraction(dailyNum):
 def factorsOfNum(dailyNum):
     for i in range(1, dailyNum + 1):
         if dailyNum % i == 0:
-            print(i)        
+            print(i)       
         
 
 print("\n >>> MULTIPLES THAT WILL TOTAL " + str(dailyNum) + "...")
@@ -85,10 +85,10 @@ print("\n >>> SUBTRACTIONS WITH ADDITIONS THAT WILL TOTAL " + str(dailyNum) + ".
 for i in range(iterations):
     generateSubtraction(dailyNum)
     
-print("\n >>> FACTORS")
+print("\n >>> ALL FACTORS")
 factorsOfNum(dailyNum)
 
-print("")
+print("\n")
     
     
 subprocess.Popen(["say", "-v", "Fred", "Homework", "is", "done"])    
